@@ -1,8 +1,11 @@
 {
+  "homepae": "http://Alok4code.github.io/tailwind-portfolio",
   "name": "tailwind-portfolio",
   "private": true,
   "version": "0.0.0",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
@@ -14,6 +17,7 @@
   "devDependencies": {
     "@vitejs/plugin-react": "^1.0.7",
     "autoprefixer": "^10.4.4",
+    "gh-pages": "^3.2.3",
     "postcss": "^8.4.12",
     "tailwindcss": "^3.0.23",
     "vite": "^2.8.0"
